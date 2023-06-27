@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+
+    <title>sito la fortuna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <header class="header clearfix">
+        <a href="index.html" class="header__logo"><img class="logo__image" src="images/logo.jpeg" alt="logo"></a>
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="chisiamo.html">Chi siamo</a></li>
+            <li class="header__menu__item"><a href="menu.html">Menu</a></li>
+            <li class="header__menu__item"><a href="delivery.php">Delivery</a></li>
+            <li class="header__menu__item"><a href="ristoratore.php">Ristoratore</a></li>
+            <li class="header__menu__item"><a href="documentazione.html">Documentazione</a></li>
+
+        </ul>
+    </header>
+
+    <section class="cover">
+        <div class="cover__filter"></div>
+        <div class="cover__caption">
+            <div class="cover__caption__copy">
+                <h1>La fortuna</h1>
+                <h2>Ristorante Asian-Fusion a Livorno</h2>
+                <a href="menu.html" class="button">Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards clearfix">
+        <div class="card" >
+            <img class="card__image" src="images/cinese.jpg" alt="Cinese">
+            <div class="card__copy">
+                <h3>Cinese</h3>
+                <p>La cucina cinese rappresenta la somma di cucine regionali anche molto diverse e si è evoluta anche in altre parti del mondo con caratteristiche diverse dall'Asia orientale al Nord America, dall'Australia all'Europa occidentale.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card__image" src="images/sushi.jpg" alt="Giapponese">
+            <div class="card__copy">
+                <h3>Giapponese</h3>
+                <p>La cucina giapponese è l'espressione dell'arte culinaria sviluppata in Giappone. È nota per essere una delle cucine più bilanciate e salutari del mondo, parte importante della caratteristica longevità dei giapponesi.  </p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card__image" src="images/thai.jpg" alt="Thai">
+            <div class="card__copy">
+                <h3>Thailandese</h3>
+                <p>La cucina thailandese è la cucina nazionale della Thailandia. Mischiando i diversi elementi delle tradizioni del sud-est asiatico, la cucina thailandese dà enfasi a piatti leggeri con forti componenti aromatiche. </p>
+            </div>
+        </div>
+    </section>
+    <section class="banner clearfix">
+        <div class="banner__copy">
+            <div class="banner__copy__text">
+            <h3>Ordina a casa tua!</h3>
+            <h4>Servizio di delivery su tutta Livorno</h4>
+            <p>Contattaci e potrai ordinare comodamente i tuoi piatti preferiti a domicilio o anche ad asporto</p>
+        </div>
+        </div>
+        <a href="delivery.php"><div class="banner__image1"></div></a>
+    </section>
+
+    <section class="banner clearfix">
+       <a href="menu.html"> <div class="banner__image2"></div></a>
+
+        <div class="banner__copy">
+            <div class="banner__copy__text">
+            <h3>Consulta i nostri menu!</h3>
+            <p>i nostri menù con la formula <b>all you can eat</b>, o il menù alla carta.</p>
+            <p>Più di 100 piatti da cui scegliere, con specialità della cucina cinese, giapponese e thailandese</p>
+        </div>
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        <div class="left">
+            <img class="logo__image" src="images/logo.jpeg" alt="logo">
+            <div>Yang Yiru titolare</div>
+            <div>Via Grande, 235, 57123 LIvorno LI</div>
+
+            <p id="copiright">Copiright - 2022 GabrieleShu</p>
+        </div>
+        
+        <div class="right">
+            <div><b>Contatti</b></div>
+            <div>email: <a href= "mailto:lafortuna@gmail.com">lafortuna@gmail.com</a></div>
+            <div>telefono: 0586896419</div>    
+            <a href="https://www.facebook.com/Ristorante-cino-giappo-thai-La-Fortuna-483905078325582/" class="header__logo"><img class="logo__image" src="images/facebook.png" alt="fb"></a>
+            <a href="https://www.instagram.com/ristorante_lafortuna/" class="header__logo"><img class="logo__image" src="images/instagram.png" alt="ig"></a>
+        </div>
+        
+        
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $(".header__icon-bar").click(function(e){
+                $(".header__menu").toggleClass('is-open');
+                e.preventDefault();
+            })
+        });
+    </script>
+
+
+
+</body>
+</html>

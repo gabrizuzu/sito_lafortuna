@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+
+    <title>sito la fortuna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/chisiamo.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <header class="header clearfix">
+        <a href="index.html" class="header__logo"><img class="logo__image" src="images/logo.jpeg" alt="logo"></a>
+        <a href="" class="header__icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </a>
+        <ul class="header__menu animate">
+            <li class="header__menu__item"><a href="chisiamo.html">Chi siamo</a></li>
+            <li class="header__menu__item"><a href="menu.html">Menu</a></li>
+            <li class="header__menu__item"><a href="delivery.php">Delivery</a></li>
+            <li class="header__menu__item"><a href="ristoratore.php">Ristoratore</a></li>
+        </ul>
+    </header>
+
+    <section class="cover">
+        <div class="cover__filter"></div>
+        <div class="cover__caption">
+            <div class="cover__caption__copy">
+                <h1>Informazioni</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner clearfix">
+        <div class="banner__image"></div>
+        <div class="banner__copy">
+            <div class="banner__copy__text">
+            <h3>Chi siamo?</h3>
+            <h4>Un ristorante multicucina aperto da 20 anni!</h4>
+            <p> Da noi puoi provare piatti cinesi, giapponesi e thailandesi. Nella versione <b>all you can eat</b> oppure menù a carta</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="banner clearfix">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.7367717770826!2d10.303783915024583!3d43.54952866714715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d5e978b48460d3%3A0xce7d3cdc902fd7ce!2sVia%20Grande%2C%20235%2C%2057123%20Livorno%20LI!5e0!3m2!1sit!2sit!4v1657980859273!5m2!1sit!2sit" width="30%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="banner__copy">
+                <div class="banner__copy__text">
+                <h3>Come raggiungerci?</h3>
+                <h4>Via Grande 235, 57123, Livorno LI</h4>
+                <p> Ci troviamo in <b>pieno centro a Livorno</b>, a due passi dal porto. Vicino al locale sono presenti due parcheggi: parcheggio dei 4 mori ed uno sul retro</p>
+            </div>
+            </div>
+        </section>
+
+    
+    
+    <section class="banner clearfix">
+        <div class="banner__image1"></div>
+        <div class="banner__copy">
+            <div class="banner__copy__text">
+            <h3>Come contattarci?</h3>
+            <h4>Siamo presenti sui social</h4>
+            <p><a href="https://www.facebook.com/Ristorante-cino-giappo-thai-La-Fortuna-483905078325582/"><b>Facebook</b></a>: La Fortuna Livorno</p>
+            <p><a href="https://www.instagram.com/ristorante_lafortuna/"><b>Instagram</b></a>: Ristorante La Fortuna</p>
+            <p><b>Telefono: </b>0586-896419</p>
+
+        </div>
+        </div>
+    </section>
+    
+
+    <section class="cards clearfix">
+        <h1>Lo staff</h1>
+        <div class="card" >
+            <img class="card__image" src="images/icona.jpeg" alt="Boss">
+            <div class="card__copy">
+                <h3>Boss</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card__image" src="images/icona.jpeg" alt="Laveraboss">
+            <div class="card__copy">
+                <h3>Stefania</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card__image" src="images/icona.jpeg" alt="gabri">
+            <div class="card__copy">
+                <h3>Gabri</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card__image" src="images/icona.jpeg" alt="lucia">
+            <div class="card__copy">
+                <h3>Lucia</h3>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+        <div class="left">
+            <img class="logo__image" src="images/logo.jpeg" alt="logo">
+            <div>Yang Yiru titolare</div>
+            <div>Via Grande, 235, 57123 LIvorno LI</div>
+
+            <p id="copiright">Copiright - 2022 GabrieleShu</p>
+        </div>
+        
+        <div class="right">
+            <div><b>Contatti</b></div>
+            <div>email: <a href= "mailto:lafortuna@gmail.com">lafortuna@gmail.com</a></div>
+            <div>telefono: 0586896419</div>    
+            <a href="https://www.facebook.com/Ristorante-cino-giappo-thai-La-Fortuna-483905078325582/" class="header__logo"><img class="" src="images/facebook.png" alt="fb"></a>
+            <a href="https://www.instagram.com/ristorante_lafortuna/" class="header__logo"><img class="logo__image" src="images/instagram.png" alt="ig"></a>
+        </div>
+        
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $(".header__icon-bar").click(function(e){
+                $(".header__menu").toggleClass('is-open');
+                e.preventDefault();
+            })
+        });
+    </script>
+
+
+
+</body>
+</html>
